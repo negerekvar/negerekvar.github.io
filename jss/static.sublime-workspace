@@ -1,0 +1,1639 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"of",
+				"offset_Y\t(?)"
+			],
+			[
+				"off",
+				"offset_x\t(?)"
+			],
+			[
+				"op",
+				"options\t{}"
+			],
+			[
+				"M",
+				"Mover(x, y)"
+			],
+			[
+				"sh",
+				"show()"
+			],
+			[
+				"pro",
+				"proto\tPrototype"
+			],
+			[
+				"s",
+				"shake\t(?)"
+			],
+			[
+				"get",
+				"getRandomColor()"
+			],
+			[
+				"so",
+				"socket\t(bool)"
+			],
+			[
+				"b",
+				"broadcast"
+			],
+			[
+				"req",
+				"req"
+			],
+			[
+				"cr",
+				"crypto\t(?)"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"le",
+				"let"
+			],
+			[
+				"bu",
+				"buf2"
+			],
+			[
+				"fo",
+				"for\tfor (…) {…}"
+			],
+			[
+				"st",
+				"step"
+			],
+			[
+				"p",
+				"perspective"
+			],
+			[
+				"sha",
+				"shape"
+			],
+			[
+				"ran",
+				"randomBytes"
+			],
+			[
+				"ra",
+				"randomBytes"
+			],
+			[
+				"fswrite",
+				"fs.writeFile(path, data, options, callback_);"
+			],
+			[
+				"mou",
+				"mouseX"
+			],
+			[
+				"m",
+				"mouseX"
+			],
+			[
+				"th",
+				"theta"
+			],
+			[
+				"d",
+				"draw"
+			],
+			[
+				"D",
+				"Dot"
+			],
+			[
+				"pa",
+				"params"
+			],
+			[
+				"a",
+				"angle"
+			],
+			[
+				"do",
+				"dot1"
+			],
+			[
+				"O",
+				"Obj"
+			],
+			[
+				"v",
+				"vertex"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"t",
+				"two"
+			],
+			[
+				"bi",
+				"bindRange"
+			],
+			[
+				"dra",
+				"drawingContext"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"dr",
+				"drawingContext"
+			],
+			[
+				"Mo",
+				"Mover"
+			],
+			[
+				"w",
+				"where"
+			],
+			[
+				"crea",
+				"createArray"
+			],
+			[
+				"cre",
+				"create\tvector"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"text",
+				"textSize"
+			],
+			[
+				"Te",
+				"Texter"
+			],
+			[
+				"ge",
+				"getRandomString"
+			],
+			[
+				"x",
+				"x_2"
+			],
+			[
+				"ger",
+				"getRandomString"
+			],
+			[
+				"po",
+				"_point"
+			],
+			[
+				"wi",
+				"window"
+			],
+			[
+				"y",
+				"yoff"
+			],
+			[
+				"str",
+				"strokeWeight"
+			],
+			[
+				"H",
+				"HSVtoRGB"
+			],
+			[
+				"color",
+				"colorMode"
+			],
+			[
+				"xo",
+				"xoff"
+			],
+			[
+				"pars",
+				"parsed"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"par",
+				"parsed"
+			],
+			[
+				"res",
+				"responses"
+			],
+			[
+				"c",
+				"comp_req"
+			],
+			[
+				"ro",
+				"rot"
+			],
+			[
+				"li",
+				"line"
+			],
+			[
+				"inn",
+				"innerWidth"
+			],
+			[
+				"coll",
+				"collideLineLine"
+			],
+			[
+				"F",
+				"Fy2"
+			],
+			[
+				"Fy",
+				"Fy2"
+			],
+			[
+				"fx",
+				"Fx2"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"ti",
+				"tick"
+			],
+			[
+				"syn",
+				"syncFn"
+			],
+			[
+				"sy",
+				"syncFn"
+			],
+			[
+				"fu",
+				"fun\tFunction"
+			],
+			[
+				"e",
+				"elapsedTime"
+			],
+			[
+				"te",
+				"Test"
+			],
+			[
+				"son",
+				"sonuclar"
+			],
+			[
+				"va",
+				"valueOf"
+			],
+			[
+				"i",
+				"isim"
+			],
+			[
+				"isi",
+				"isim_id"
+			],
+			[
+				"mycansa",
+				"mycanvas"
+			],
+			[
+				"set",
+				"setValue"
+			],
+			[
+				"add",
+				"adder"
+			],
+			[
+				"di",
+				"dist"
+			],
+			[
+				"el",
+				"el_r"
+			],
+			[
+				"ret",
+				"returnString"
+			],
+			[
+				"in",
+				"innerHeight"
+			],
+			[
+				"inne",
+				"innerWidth"
+			],
+			[
+				"V",
+				"value"
+			],
+			[
+				"tex",
+				"text_box"
+			],
+			[
+				"ar",
+				"arr_y"
+			],
+			[
+				"Cre",
+				"createVector"
+			],
+			[
+				"cra",
+				"create\tvector"
+			],
+			[
+				"C",
+				"Circle"
+			],
+			[
+				"mo",
+				"mouseY"
+			],
+			[
+				"ve",
+				"vec_2"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"f",
+				"for\tforme"
+			],
+			[
+				"pos",
+				"poses"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"my",
+				"myContainer"
+			],
+			[
+				"pso",
+				"poses"
+			],
+			[
+				"PO",
+				"poses"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"acc",
+				"acc_target"
+			],
+			[
+				"mouse",
+				"mouseX"
+			],
+			[
+				"pi",
+				"pivot"
+			],
+			[
+				"ca",
+				"call_me"
+			],
+			[
+				"r",
+				"real_target"
+			],
+			[
+				"lo",
+				"loadPixels"
+			],
+			[
+				"dis",
+				"distance"
+			],
+			[
+				"vel",
+				"vel_1"
+			],
+			[
+				"ce",
+				"createVector"
+			],
+			[
+				"sp",
+				"speed"
+			],
+			[
+				"shaderso",
+				"gl.shaderSource(${0:WebGLShader_shader}, string_source)\tGLCompletion"
+			],
+			[
+				"shader",
+				"gl.getShaderSource(${0:WebGLShader_shader})\tGLCompletion"
+			],
+			[
+				"arr",
+				"arr"
+			],
+			[
+				"pr",
+				"proto\tPrototype"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"rad",
+				"radius"
+			],
+			[
+				"ad",
+				"adet"
+			],
+			[
+				"wa",
+				"walk"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "template.js",
+			"settings":
+			{
+				"buffer_size": 1704,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/laptop/Desktop/static/index.html",
+			"settings":
+			{
+				"buffer_size": 1400,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Love2D"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: File"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: Project"
+				]
+			],
+			[
+				"Packages/Lua Love/LuaLove.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "can",
+		"selected_items":
+		[
+			[
+				"can",
+				"Build: Cancel"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"ca",
+				"Build: Cancel"
+			],
+			[
+				"gis",
+				"Gist: Insert Gist"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"synat ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"canc",
+				"Build: Cancel"
+			],
+			[
+				"hex",
+				"HexViewer: Generate Hash"
+			],
+			[
+				"togg h",
+				"HexViewer: Toggle Hex View"
+			],
+			[
+				"he",
+				"HexViewer: Toggle Hex View"
+			],
+			[
+				"syn html",
+				"Set Syntax: HTML"
+			],
+			[
+				"cance",
+				"Build: Cancel"
+			],
+			[
+				"syt java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"Gist: Open Gist"
+			],
+			[
+				"inse",
+				"Gist: Insert Gist"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syn java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"repe",
+				"Repeat Macro"
+			],
+			[
+				"set sy ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"buil",
+				"Build: Cancel"
+			],
+			[
+				"figl",
+				"Figlet: Add Text"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"term",
+				"Terminality: Browse Commands..."
+			],
+			[
+				"repl",
+				"SublimeREPL: Node"
+			],
+			[
+				"sor",
+				"Permute Selections: Sort"
+			],
+			[
+				"repl no",
+				"SublimeREPL: Node"
+			],
+			[
+				"sort",
+				"SublimeREPL: Octave"
+			],
+			[
+				"remp",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"li",
+				"Package Control: List Packages"
+			],
+			[
+				"a fi",
+				"A File Icon: Revert to a Freshly Installed State"
+			],
+			[
+				"a i",
+				"A File Icon: Environment"
+			],
+			[
+				"set java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"permu",
+				"Permute Lines: Reverse"
+			],
+			[
+				"",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"1",
+				"Emmet: Decrement Number by 1"
+			],
+			[
+				"spell",
+				"Snippet: Insert livereload.js script"
+			],
+			[
+				"linter",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"inte",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"set sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"syn jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"up",
+				"Emmet: Update Image Size"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"live",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"set ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"fig",
+				"Figlet: Add Text"
+			],
+			[
+				"setsy sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"sets js",
+				"Set Syntax: JSON"
+			],
+			[
+				"repea",
+				"Repeat Macro"
+			],
+			[
+				"pa re",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"pa res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"pac res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"ser ja",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"livere",
+				"LiveReload: Self test"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Object key — key: \"value\""
+			],
+			[
+				"set sy ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set s  html",
+				"Set Syntax: HTML"
+			],
+			[
+				"figle",
+				"Figlet: Add Text"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"st html",
+				"Set Syntax: HTML"
+			],
+			[
+				"update",
+				"Emmet: Update Image Size"
+			],
+			[
+				"rel",
+				"LiveReload: Self test"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"set js",
+				"Set Syntax: JSON"
+			],
+			[
+				"prett",
+				"HTMLPrettify: Set `node` Path"
+			]
+		],
+		"width": 450.0
+	},
+	"console":
+	{
+		"height": 520.0,
+		"history":
+		[
+			"print(\"fghjk\")",
+			"print(\"ghjkl\")",
+			"http-server",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/laptop/Desktop/static/bower_components/p5.collide2D/p5.collide2d.js",
+		"/C/Users/laptop/Desktop/static/app_test.js",
+		"/C/Users/laptop/Desktop/static/desktop.ini",
+		"/C/Users/laptop/Desktop/liveedit/app.js",
+		"/C/Users/laptop/Desktop/static/bower_components/p5.js/lib/p5.js",
+		"/C/Users/laptop/Desktop/static/jss/panel.js",
+		"/C/Users/laptop/Desktop/static/jss/PixelArt.js",
+		"/C/Users/laptop/Desktop/static/index.html",
+		"/C/Users/laptop/Desktop/static/jss/NestedCircle.js",
+		"/C/Users/laptop/Desktop/static/jss/ARF.js",
+		"/C/Users/laptop/Downloads/grid-master/grid.js",
+		"/C/Users/laptop/Downloads/grid-master/griddemo.js",
+		"/C/Users/laptop/Downloads/cardioid.cdf",
+		"/C/Users/laptop/Downloads/har",
+		"/C/Users/laptop/Desktop/liveedit/public/index.html",
+		"/C/Users/laptop/Desktop/volkanozcan2.github.io/jss/panel.js",
+		"/C/Users/laptop/Desktop/static/jss/template.js",
+		"/C/Users/laptop/Desktop/liveedit/index.html",
+		"/C/Users/laptop/Desktop/static/style.css",
+		"/C/Users/laptop/Desktop/liveedit/public/sketch.js",
+		"/C/Users/laptop/Desktop/liveedit/public/app.js",
+		"/C/Users/laptop/Desktop/liveedit/package.json",
+		"/C/Users/laptop/Desktop/liveedit/npm-debug.log",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/laptop/Desktop/static/node_modules/request/lib/har.js",
+		"/C/Users/laptop/Desktop/static/jss/MetaHue.js",
+		"/C/Users/laptop/Desktop/staticd.bin",
+		"/C/Users/laptop/Desktop/static/images/0.png",
+		"/C/Users/laptop/Desktop/static/jss/aesthetics.js",
+		"/C/Users/laptop/Desktop/static/myBinaryFile",
+		"/C/Users/laptop/Desktop/static/logo.png",
+		"/C/Users/laptop/Desktop/static/bower_components/Matter/build/matter.js",
+		"/C/Users/laptop/Desktop/static/test.enc",
+		"/C/Users/laptop/Desktop/static/test.png",
+		"/C/Users/laptop/Desktop/static/node_modules/.bin/mime.cmd",
+		"/C/Users/laptop/Desktop/static/tile.png",
+		"/C/Users/laptop/Desktop/staticbin.bin",
+		"/C/Users/laptop/Desktop/static/bin.bin",
+		"/C/Users/laptop/Desktop/static/t.txt",
+		"/C/Users/laptop/Desktop/static/hsltorgb.js",
+		"/C/Users/laptop/Desktop/static/jss/Atan2.js",
+		"/C/Users/laptop/Desktop/CodingMath/mini11/bezier.js",
+		"/C/Users/laptop/Desktop/CodingMath/mini11/main.js",
+		"/C/Users/laptop/Desktop/static/jss/Xtable.js",
+		"/C/Users/laptop/Desktop/static/jss/noiseFunction.js",
+		"/C/Users/laptop/Desktop/static/bower_components/quicksettings/quicksettings.js",
+		"/C/Users/laptop/Desktop/liveedit/myOutput.txt",
+		"/C/Users/laptop/Desktop/volkanozcan2.github.io/README.md",
+		"/C/Users/laptop/Desktop/volkanozcan2.github.io/jss/template.js",
+		"/C/Users/laptop/Desktop/volkanozcan2.github.io/style.css",
+		"/C/Users/laptop/Desktop/static/adresler.txt",
+		"/C/Users/laptop/Desktop/static/array.txt",
+		"/C/Users/laptop/Desktop/static/referans",
+		"/C/Users/laptop/Desktop/static/texter.js",
+		"/C/Users/laptop/Desktop/static/tester.js",
+		"/C/Users/laptop/Desktop/static/parallel.js",
+		"/C/Users/laptop/Desktop/static/matrixtest.js",
+		"/C/Users/laptop/Desktop/static/filesystem.js",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/C/Users/laptop/Desktop/liveedit/test.txt",
+		"/C/Users/laptop/Desktop/CodingMath/episode4/bees.js",
+		"/C/Users/laptop/Desktop/CodingMath/episode4/code.js",
+		"/C/Users/laptop/Desktop/live edit/package.json",
+		"/C/Users/laptop/Desktop/live edit/app.js",
+		"/C/Users/laptop/Desktop/live edit/template.js",
+		"/C/Users/laptop/Desktop/static/jss/emojis.js",
+		"/C/Users/laptop/Downloads/grid-master/require.js",
+		"/C/Users/laptop/Desktop/static/jss/steering_behaviors.js",
+		"/C/Users/laptop/Desktop/static/jss/sabitler.js",
+		"/C/Users/laptop/Desktop/static/sample-1.jpg",
+		"/C/Users/laptop/Desktop/2048/js/tile.js",
+		"/C/Users/laptop/Desktop/2048/js/local_storage_manager.js",
+		"/C/Users/laptop/Desktop/2048/js/keyboard_input_manager.js",
+		"/C/Users/laptop/Desktop/2048/js/html_actuator.js",
+		"/C/Users/laptop/Desktop/2048/js/grid.js",
+		"/C/Users/laptop/Desktop/2048/js/game_manager.js",
+		"/C/Users/laptop/Desktop/2048/js/classlist_polyfill.js",
+		"/C/Users/laptop/Desktop/2048/js/animframe_polyfill.js",
+		"/C/Users/laptop/Desktop/2048/js/application.js",
+		"/C/Users/laptop/Desktop/2048/js/bind_polyfill.js",
+		"/C/Users/laptop/Desktop/static/OneSec.txt",
+		"/C/Users/laptop/Desktop/static/sample.webm",
+		"/C/Users/laptop/Desktop/static/LICENSE",
+		"/C/Users/laptop/Desktop/static/başvuru.png",
+		"/C/Users/laptop/Desktop/static/avatar.jpg",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/HexViewer/Default (Windows).sublime-keymap",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/HexViewer/hex_viewer.sublime-settings",
+		"/C/Users/laptop/Desktop/static/IMG_290977.jpg",
+		"/C/Users/laptop/Desktop/static/test.txt",
+		"/C/Users/laptop/Desktop/static/kedi.jpg",
+		"/C/Users/laptop/Downloads/log",
+		"/C/Users/laptop/Desktop/static/isimler.json",
+		"/C/Users/laptop/Desktop/static/deneme.txt",
+		"/C/Users/laptop/Desktop/static/jss/LineIntersection.js",
+		"/C/Users/laptop/Desktop/static/jss/stars.js",
+		"/C/Users/laptop/Desktop/static/node_modules/http-errors/index.js",
+		"/C/Users/laptop/Desktop/static/node_modules/etag/index.js",
+		"/C/Users/laptop/Desktop/static/node_modules/accepts/index.js",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/NodeJS/repl.js",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/NodeJS/Main.sublime-menu",
+		"/C/Users/laptop/Desktop/static/my.txt",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/Users/laptop/Desktop/static/cta.gif",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/laptop/Desktop/static/.htaccess",
+		"/C/Users/laptop/Desktop/static/sonuc.txt",
+		"/C/Users/laptop/Desktop/static/node_modules/moment/src/lib/duration/add-subtract.js",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/laptop/Desktop/static/bower_components/quicksettings/.gitignore",
+		"/C/Users/laptop/Desktop/static/naber.png",
+		"/C/Users/laptop/Desktop/static/node_modules/moment/src/lib/create/check-overflow.js",
+		"/C/Users/laptop/Desktop/live edit/index.html",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/xampp/mysql_start.bat",
+		"/C/xampp/mysql/scripts/ctl.bat",
+		"/C/Users/laptop/Desktop/1325813/turkce_isimler.sql",
+		"/C/xampp/mercury_start.bat",
+		"/C/Users/laptop/Desktop/live edit/bower_components/codemirror/mode/sql/sql.js",
+		"/C/Users/laptop/Desktop/game/conf.lua",
+		"/C/Users/laptop/Desktop/game/main.lua",
+		"/C/Users/laptop/Downloads/examples_test.love",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/laptop/AppData/Roaming/Sublime Text 3/Packages/JSLint/JSLint.sublime-settings",
+		"/C/Users/laptop/Desktop/CodingMath/episode11/main.js"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+			"C:\\Users\\laptop\\Desktop\\static\\jss",
+			"*.*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"50",
+			"25",
+			"50",
+			"options",
+			"100",
+			"a",
+			"10",
+			"45",
+			"10",
+			"30",
+			"150",
+			"Math.random() * 300",
+			"a",
+			".draw",
+			"draw",
+			"1",
+			"Blink",
+			"6",
+			"60",
+			"size",
+			"50",
+			"400",
+			"30",
+			"200",
+			"100",
+			"t",
+			"60",
+			"10",
+			"5",
+			"radnom",
+			"5",
+			"socket.broadcast.emit(\"users\", { number: client_count });",
+			"/public",
+			"x",
+			"preload",
+			"first",
+			"crypto",
+			"lots",
+			"${arr.length}",
+			"\"1\"",
+			"1",
+			"radnom",
+			"100",
+			"a",
+			"random",
+			"100",
+			"300",
+			"* rnd",
+			" random(100, 150)",
+			"rnd",
+			"150",
+			"options.a",
+			"options.b",
+			"theta",
+			"100",
+			"200",
+			"10",
+			"1",
+			"add",
+			"5",
+			"50",
+			"10",
+			"50",
+			"options.col",
+			");\n",
+			"30",
+			"width",
+			"binBoolean",
+			"- t",
+			"+ t",
+			"t",
+			"0",
+			"255",
+			"let",
+			"perspective",
+			"100",
+			"255",
+			"'",
+			"randomString",
+			"</div>",
+			"<div>",
+			"200",
+			"400",
+			"x",
+			"a",
+			"c",
+			"random()",
+			"arr.",
+			"random",
+			"str",
+			"100 + t",
+			" + t",
+			"0",
+			"theta",
+			"+",
+			"30",
+			"20",
+			"10",
+			"+",
+			"50",
+			"atan2",
+			"z",
+			"a",
+			"10",
+			"size",
+			" - 25",
+			"y",
+			"x",
+			"shape",
+			"PERLIN_SIZE",
+			"20",
+			"10",
+			"_X",
+			"add",
+			"_localStorageName",
+			":",
+			"count",
+			"Ø",
+			"carp",
+			"r",
+			".r",
+			"r",
+			"init",
+			"this._controls",
+			"value",
+			".id",
+			"$(this).text",
+			"this"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"cells\":[{",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "template.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								860,
+								860
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/laptop/Desktop/static/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1400,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1149,
+								1149
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1142,
+										1148
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1053,
+										1059
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 392.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 141.0
+	},
+	"pinned_build_system": "Packages/User/nodejs.sublime-build",
+	"project": "static.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"temp",
+				"jss\\template.js"
+			],
+			[
+				"pane",
+				"jss\\panel.js"
+			],
+			[
+				"app",
+				"app_test.js"
+			],
+			[
+				"pan",
+				"jss\\panel.js"
+			],
+			[
+				"tem",
+				"jss\\template.js"
+			],
+			[
+				"te",
+				"jss\\template.js"
+			],
+			[
+				"sty",
+				"style.css"
+			],
+			[
+				"p",
+				"jss\\panel.js"
+			],
+			[
+				"myb",
+				"myBinaryFile"
+			],
+			[
+				"my",
+				"myBinaryFile"
+			],
+			[
+				"m",
+				"myBinaryFile"
+			],
+			[
+				"st",
+				"style.css"
+			],
+			[
+				"",
+				"package.json"
+			],
+			[
+				"texter",
+				"texter.js"
+			],
+			[
+				"text",
+				"texter.js"
+			],
+			[
+				"pa",
+				"jss\\panel.js"
+			],
+			[
+				"templ",
+				"jss\\template.js"
+			],
+			[
+				"bina",
+				"myBinaryFile"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"dene",
+				"deneme.txt"
+			],
+			[
+				"tester",
+				"tester.js"
+			],
+			[
+				"p5",
+				"bower_components\\p5.js\\lib\\p5.js"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"tesst",
+				"tester.js"
+			],
+			[
+				"empl",
+				"jss\\template.js"
+			],
+			[
+				"templa",
+				"jss\\template.js"
+			],
+			[
+				"i",
+				"index.html"
+			],
+			[
+				"q",
+				"bower_components\\quicksettings\\quicksettings.css"
+			],
+			[
+				"s",
+				"style.css"
+			],
+			[
+				"ined",
+				"index.html"
+			],
+			[
+				"smok",
+				"jss\\color_smoke.js"
+			],
+			[
+				"test",
+				"jss\\test.js"
+			],
+			[
+				"sinn",
+				"sinn.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 255.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
