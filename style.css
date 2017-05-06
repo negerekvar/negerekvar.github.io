@@ -1,6 +1,35 @@
 body {
     background: #e2e1e0;
     text-align: center;
+    height: 100%;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-osx-font-smoothing: grayscale;
+    background-repeat: repeat;
+    /*background-color: white;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#myContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    /*    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+*/
+    /*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*/
 }
 
 .card {
