@@ -26,9 +26,6 @@ panel.addHTML("Positions", "");
 panel.addButton(" clear ", function() {
     clear();
 });
-panel.addButton(" save as image ", function() {
-    saveCanvas(mycanvas, 'myCanvas', 'jpg');
-});
 var mycanvas;
 
 function setup() {
