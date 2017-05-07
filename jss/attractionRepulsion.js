@@ -27,7 +27,6 @@ function setup() {
 }
 
 function draw() {
-    panel.setValue("FPS", ~~getFrameRate());
     clear();
     // background(100, 10);
     point(att.x, att.y);
@@ -97,6 +96,6 @@ Particle.prototype.attract = function(target) {
         force.mult(-10);
     }
 
-    this.acc.add(force - 20);
+    this.acc.add(force);
 
 }
