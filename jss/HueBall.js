@@ -26,7 +26,7 @@ let diist = (x1, y1, x2, y2) => {
 }
 
 function preload() {
-    font = loadFont('./fonts/AvenirNextLTPro-Demi.otf');
+    font = loadFont('../fonts/AvenirNextLTPro-Demi.otf');
 }
 
 function setup() {

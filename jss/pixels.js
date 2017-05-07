@@ -8,13 +8,13 @@ var vid;
 var _index;
 
 function preload() {
-    img = loadImage("cat.jpg", function() {
+    img = loadImage("../images/cat.jpg", function() {
         // img.resize(img.width / 1, img.height / 1);
 
     }, function() {
         console.log("hata !!!")
     });
-    img2 = loadImage("dog.jpg", function() {
+    img2 = loadImage("../images/dog.jpg", function() {
         // img2.resize(img2.width / 1, img2.height / 1);
 
     }, function() {
