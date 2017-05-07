@@ -4,12 +4,13 @@ by Craig Reynolds
 http://www.red3d.com/cwr/steer/
 */
 var sample = []
-
+var offset;
 var points;
 var vehicles = [];
+var _text = "Jamiryo!!!";
 
 function preload() {
-    font = loadFont("/fonts/AvenirNextLTPro-Demi.otf");
+    font = loadFont("../fonts/AvenirNextLTPro-Demi.otf");
 }
 
 function setup() {
@@ -18,14 +19,16 @@ function setup() {
     y = $("#myContainer").height(); /* bunuda */
     var mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
-    // colorMode(HSB, width, width, width);
-
+    offset = font.textBounds(_text, 0, 0, 150);
+    sample = font.textToPoints(_text, width * .5 - (offset.w / 2), height * .5, 150, {
+        sampleFactor: 0.25
+    });
     /*istersen gölge ekle */
-    sample = font.textBounds("naber", width * 0.5, height * 0.5, 192);
-    drawingContext.shadowOffsetX = 1;
-    drawingContext.shadowOffsetY = -1;
-    drawingContext.shadowBlur = 5;
-    drawingContext.shadowColor = "black";
+    // drawingContext.shadowOffsetX = 1;
+    // drawingContext.shadowOffsetY = -1;
+    // drawingContext.shadowBlur = 5;
+    // drawingContext.shadowColor = "black";
+
 
     for (var i = 0; i < sample.length; i++) {
         var pt = sample[i];
@@ -40,7 +43,7 @@ function setup() {
 
 function draw() {
     clear();
-    stroke(255);
+    stroke(0);
     strokeWeight(8);
 
     for (var i = 0; i < vehicles.length; i++) {
