@@ -1,3 +1,3 @@
 # negerekvar.github.io
 
-DEMOS an stuff
+demos written with p5.js
