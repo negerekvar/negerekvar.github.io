@@ -8,9 +8,9 @@ let hue = .1;
 
 function preload() {
     for (var i = 0; i < img.length; i++) {
-        img[i] = loadImage("images/" + i + ".png");
+        img[i] = loadImage("../images/" + i + ".png");
     }
-    bubble = loadImage("images/bubble.png");
+
 }
 
 function setup() {
@@ -36,7 +36,6 @@ function setup() {
     };
     noFill();
 }
-let ara;
 
 
 function draw() {
