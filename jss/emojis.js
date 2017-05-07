@@ -51,7 +51,6 @@ function draw() {
         kare[a].update(window.speed);
     }
     endShape(CLOSE);
-    panel.setValue(" FPS ", ~~frameRate());
 
 }
 
@@ -95,5 +94,4 @@ function mouseClicked() {
 
 function mouseWheel() {
     size += (event.deltaY < 0) ? +.03 : -.03;
-    print(scroll);
 }
