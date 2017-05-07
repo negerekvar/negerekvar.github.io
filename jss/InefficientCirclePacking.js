@@ -2,7 +2,7 @@ var arr = new Array();
 let pass = false;
 var panel = QuickSettings.create(10, 10, "");
 var tries = 0;
-var _show = false;
+var _show = true;
 panel.addHTML("Count", "<p>tries</p><a href=\"#\" id=\"v1\"></a> <br><p>success</p><b  id=\"v2\"></b>")
 panel.addBoolean("Show", true, function(value) {
     _show = value;
