@@ -12,13 +12,13 @@ function preload() {
         // img.resize(img.width / 1, img.height / 1);
 
     }, function() {
-        console.log("hata !!!")
+        console.log("hata resim yok !")
     });
     img2 = loadImage("../images/dog.jpg", function() {
         // img2.resize(img2.width / 1, img2.height / 1);
 
     }, function() {
-        console.log("hata !!!")
+        console.log("hata resim yok !")
     });
 }
 
@@ -38,9 +38,6 @@ function setup() {
     // drawingContext.shadowOffsetY = -1;
     // drawingContext.shadowBlur = 5;
     // drawingContext.shadowColor = "black";
-    // vid.loop();
-
-    // noFill();
 
     img.loadPixels();
     img2.loadPixels();
@@ -67,19 +64,18 @@ function setup() {
         bu.push(new Git(vec, col, nx_col));
     }
 
-    // noLoop();
+
     noStroke();
 }
 
 function draw() {
-    // background(255);
     clear();
     for (var i = 0; i < bu.length; i++) {
         bu[i].oraya();
         bu[i].ciz();
         bu[i].check_next();
     }
-    // noLoop();
+
 }
 
 
@@ -120,5 +116,5 @@ Git.prototype.ciz = function() {
 };
 Git.prototype.check_next = function() {
     this.di = this.pos.dist(this.target.real);
-
+    (this.di < .001) && (this.color = this.fill.dog);
 };

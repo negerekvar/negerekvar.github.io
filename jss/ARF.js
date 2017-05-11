@@ -18,7 +18,7 @@ function setup() {
 
     p = new particle(width / 2, height / 2);
     a = new particle(200, 200);
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < 200; i++) {
         particles.push(new particle(random(width), random(height)));
     }
 

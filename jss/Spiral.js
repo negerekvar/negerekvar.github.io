@@ -1,19 +1,18 @@
 var panel = QuickSettings.create(10, 10, "Panel");
 var options = {
     a: 5,
-    n: 200,
+    n: 2000,
     c: .01,
-    Animate: true
+    Animate: false,
+    flag: true,
+    speed: .1
 };
 
 panel.addHTML("FPS", "");
-panel.addHTML("test", '');
-panel.bindRange("n", 50, 10000, 600, 1, options);
-panel.addBoolean("Animate", true, val => {
-    options.Animate = val;
-    (val) ? loop(): noLoop();
+panel.bindRange("n", 2000, 15000, 1200, 1, options);
+panel.bindRange("speed", .05, 1.5, .1, .1, options);
+panel.bindBoolean("Animate", false, options);
 
-});
 panel.setKey("h");
 
 let arr = [];
@@ -38,7 +37,7 @@ function setup() {
     rectMode(CORNER);
     angleMode(DEGREES);
     colorMode(HSB, 360, 100, 100);
-    // noFill();
+    noFill();
     noStroke();
     stroke("black");
     for (var x = 0; x < width; x += 50) {
@@ -54,7 +53,12 @@ function draw() {
     // background(0, 0, 100);
     clear();
     translate(width * .5, height * .5)
-    panel.setValue("FPS", frameRate());
+    panel.setValue("FPS", ~~getFrameRate());
+    if (options.Animate) {
+        options.n += (options.flag) ? options.speed : -options.speed;
+        (options.n > 15000 || options.n < 1200) && (options.flag = !options.flag)
+        panel.setValue("n", options.n)
+    }
     beginShape();
 
     for (i = 0; i < 360; i++) {

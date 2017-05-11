@@ -5,7 +5,6 @@ var amplitude = 75.0; // Height of wave
 var period = 600.0; // How many pixels before the wave repeats
 var dx; // Value for incrementing x
 var yvalues; // Using an array to store height values for the wave
-var ccolor = "#ffae23"
 var radius = 10;
 
 function setup() {
