@@ -7,7 +7,7 @@ var sample = []
 var offset;
 var points;
 var vehicles = [];
-var _text = "Jamiryo!!!";
+var _text = "YENİUMUT";
 
 function preload() {
     font = loadFont("../fonts/AvenirNextLTPro-Demi.otf");
