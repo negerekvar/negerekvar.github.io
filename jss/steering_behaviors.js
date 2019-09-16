@@ -1,8 +1,4 @@
-/*Steering Behaviors For Autonomous Characters 
-background and update 
-by Craig Reynolds 
-http://www.red3d.com/cwr/steer/
-*/
+
 var sample = []
 var offset;
 var points;
@@ -37,7 +33,7 @@ function setup() {
 
         // point(pt.x, pt.y);
     }
-    console.log(vehicles.length);
+    
 
 }
 
