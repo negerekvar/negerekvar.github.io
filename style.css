@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:800');
-body,
-html {
+body, html {
     height: 100%;
     cursor: default;
     -webkit-touch-callout: none;
@@ -12,6 +11,10 @@ html {
     -moz-osx-font-smoothing: grayscale;
     background-repeat: repeat;
     /*background-color: white;*/
+}
+
+center {
+    padding-top: 2%;
 }
 
 .card {
