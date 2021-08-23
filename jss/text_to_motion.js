@@ -1,5 +1,5 @@
 var panel = QuickSettings.create(10, 10, "🐦");
-panel.addText("Bir şeyler yaz", "", function(value) { output(value) });
+panel.addText("Bir şeyler yaz", "", function (value) { output(value) });
 panel.addHTML("info", "Turn it off and back on again");
 panel.addHTML("fps", "");
 panel.hideAllTitles();
@@ -13,7 +13,6 @@ var objarray = [];
 function preload() {
     font = loadFont("/fonts/AvenirNextLTPro-Demi.otf");
 }
-
 function setup() {
 
     x = $("#myContainer").width(); /* myContainerı istediğinle değiştir */
@@ -33,7 +32,7 @@ function setup() {
 }
 
 function draw() {
-    // background("#fff")
+    background("#000");
     clear();
 
     for (var i = 0; i < particles.length; i++) {
@@ -68,7 +67,7 @@ function Boom(x, y) {
     this.target = createVector(x, y);
     this.pos = createVector(random(width), random(height));
     this.col = getRandomColor();
-    this.go = function() {
+    this.go = function () {
         this.pos.lerp(this.target, 0.07);
         this.x = this.pos.x;
         this.y = this.pos.y;
