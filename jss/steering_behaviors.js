@@ -3,7 +3,7 @@ var sample = []
 var offset;
 var points;
 var vehicles = [];
-var _text = "7AYıldız";
+var _text = "7AYıldız💗💗💗";
 
 function preload() {
     font = loadFont("../fonts/AvenirNextLTPro-Demi.otf");
