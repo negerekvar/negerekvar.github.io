@@ -5,6 +5,8 @@ var points;
 var vehicles = [];
 var _text = "7B_kahraman";
 
+console.log("merhaba dünya!!!")
+
 function preload() {
     font = loadFont("../fonts/AvenirNextLTPro-Demi.otf");
 }
