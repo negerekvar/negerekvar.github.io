@@ -1,9 +1,8 @@
-
 var sample = []
 var offset;
 var points;
 var vehicles = [];
-var _text = "7B_kahraman";
+var _text = "_7B_";
 
 console.log("merhaba dünya!!!")
 
