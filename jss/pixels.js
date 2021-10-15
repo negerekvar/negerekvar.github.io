@@ -8,7 +8,7 @@ var vid;
 var _index;
 
 function preload() {
-    img = loadImage("../images/cat.jpg", function() {
+    img = loadImage("../images/bunny.png", function() {
         // img.resize(img.width / 1, img.height / 1);
 
     }, function() {
