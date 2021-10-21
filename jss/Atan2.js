@@ -1,4 +1,4 @@
-var panel = QuickSettings.create(10, 10, "Panel");
+let panel = QuickSettings.create(10, 10, "Panel");
 let x = innerWidth;
 let y = innerHeight;
 let params = {
