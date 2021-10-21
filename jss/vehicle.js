@@ -7,7 +7,7 @@ function Vehicle(x, y) {
     this.maxspeed = 10;
     this.maxforce = 1;
     this.rad = random(5, 10);
-    this.color = getRandomColor();
+    this.color = random(colors);
 }
 
 
