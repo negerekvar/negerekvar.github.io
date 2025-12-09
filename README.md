@@ -1,7 +1,15 @@
 # negerekvar.github.io
 
-🚀demos written with p5.js🚀
+p5.js demoları. İstediğin herhangi birini tıkla. Son 3 demoyu ai yazdı.
 
-## Development
+## Geliştirme
 
-Run `npm install` once, then `npm run build` to transpile the TypeScript in `src/` to runnable JavaScript under `build/`. The demo HTML files already point at the built assets.
+1. Bağımlılıkları kur: `npm install`
+2. Derle: `npm run build`
+3. Statik olarak servis et: `python3 -m http.server 8000 --bind 127.0.0.1` ve tarayıcıdan `http://127.0.0.1:8000` adresine git.
+
+Kaynak kodu `src/` altında TypeScript olarak duruyor; çıktılar `build/` klasörüne yazılıyor. Demo HTML dosyaları otomatik olarak `build/` altındaki dosyalara işaret eder.
+
+## Dağıtım (GitHub Pages)
+
+`.github/workflows/pages.yml` dosyası, `main` dalına her push sonrası otomatik derleyip Pages’e gönderir. Repoda Pages kaynağını **GitHub Actions** olarak ayarlamak yeterli.
