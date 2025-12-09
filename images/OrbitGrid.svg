@@ -19,5 +19,4 @@
     <circle cx="150" cy="230" r="4"/>
     <circle cx="150" cy="270" r="6"/>
   </g>
-  <text x="50%" y="92%" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#cbd5f5" text-anchor="middle">Orbit Grid</text>
 </svg>

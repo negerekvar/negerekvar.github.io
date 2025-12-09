@@ -13,8 +13,8 @@ let co = 0;
 let arr = new Array(10);
 let panel = QuickSettings.create(10, 10, "🐦");
 panel.setSize(250);
-panel.addBoolean("Stop Animation", false, function(value) {
-    (value === true) ? noLoop(): loop();
+panel.addBoolean("Stop Animation", false, function (value) {
+    (value === true) ? noLoop() : loop();
 
 });
 
@@ -24,7 +24,7 @@ panel.bindRange("r", .0001, 1, .01, .001, sets);
 panel.bindRange("α", .0001, 1, .005, .001, sets);
 panel.bindRange("offset", 0, 100, 20, 1, sets);
 panel.addHTML("Positions", "");
-panel.addButton(" clear ", function() {
+panel.addButton(" clear ", function () {
     clear();
 });
 let mycanvas;
@@ -91,9 +91,3 @@ function windowResized() {
     // resizeCanvas(windowWidth, windowHeight);
 }
 
-function Test() {
-    let arr = [];
-    for (let a = 0; a < 30; a++) {
-
-    }
-}
