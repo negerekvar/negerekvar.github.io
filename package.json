@@ -1,0 +1,26 @@
+{
+  "name": "negerekvar.github.io",
+  "version": "1.0.0",
+  "description": "🚀demos written with p5.js🚀",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/negerekvar/negerekvar.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/negerekvar/negerekvar.github.io/issues"
+  },
+  "homepage": "https://github.com/negerekvar/negerekvar.github.io#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.5.33",
+    "@types/p5": "^1.7.7",
+    "typescript": "^5.9.3"
+  }
+}

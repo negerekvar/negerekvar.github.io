@@ -1,0 +1,13 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ff8a00" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#6200ff" stop-opacity="0.6"/>
+    </radialGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#g1)"/>
+  <circle cx="90" cy="90" r="70" fill="#fff" fill-opacity="0.15"/>
+  <circle cx="210" cy="110" r="60" fill="#fff" fill-opacity="0.2"/>
+  <circle cx="140" cy="200" r="85" fill="#fff" fill-opacity="0.12"/>
+  <text x="50%" y="50%" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#fff" text-anchor="middle" dominant-baseline="middle" opacity="0.8">Bokeh</text>
+</svg>

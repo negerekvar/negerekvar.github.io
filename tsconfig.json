@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ES2017"],
+    "rootDir": "src",
+    "outDir": "build",
+    "moduleResolution": "node",
+    "resolveJsonModule": false,
+    "allowJs": false,
+    "strict": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "types": ["p5/global", "jquery"],
+    "removeComments": false
+  },
+  "include": ["src/**/*.ts"]
+}
