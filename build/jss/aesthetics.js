@@ -76,8 +76,3 @@ function getRandomString(len = 9) {
 function windowResized() {
     // resizeCanvas(windowWidth, windowHeight);
 }
-function Test() {
-    let arr = [];
-    for (let a = 0; a < 30; a++) {
-    }
-}
