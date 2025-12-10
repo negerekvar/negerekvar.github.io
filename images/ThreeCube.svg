@@ -1,0 +1,15 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cubeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="#0f172a"/>
+  <rect x="60" y="70" width="140" height="140" fill="url(#cubeGrad)" opacity="0.85" transform="skewX(-6) skewY(6)"/>
+  <path d="M60 70 L210 90 L210 230 L60 210 Z" fill="#10b981" opacity="0.35"/>
+  <path d="M200 80 L240 110 L240 250 L200 220 Z" fill="#f59e0b" opacity="0.45"/>
+  <circle cx="80" cy="90" r="6" fill="#f8fafc"/>
+  <circle cx="230" cy="120" r="5" fill="#f8fafc"/>
+  <text x="50%" y="92%" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#cbd5f5" text-anchor="middle">Three.js</text>
+</svg>

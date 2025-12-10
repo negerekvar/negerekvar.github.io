@@ -100,6 +100,10 @@ body.no-scroll {
     overflow: hidden;
 }
 
+canvas {
+    touch-action: none;
+}
+
 .viewer {
     position: fixed;
     inset: 0;

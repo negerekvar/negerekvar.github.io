@@ -192,3 +192,48 @@ if (typeof window !== "undefined" && !window.QuickSettings) {
         create: (x, y, title) => new BasicPanel(x, y, title)
     };
 }
+
+// Basic touch support so mouse-driven sketches respond on touch devices.
+if (typeof window !== "undefined") {
+    const updateMouse = (e: TouchEvent) => {
+        const t = e.touches[0];
+        if (!t) return;
+        (window as any).mouseX = t.clientX;
+        (window as any).mouseY = t.clientY;
+    };
+
+    window.addEventListener(
+        "touchstart",
+        (e) => {
+            updateMouse(e);
+            if (typeof (window as any).mousePressed === "function") {
+                (window as any).mousePressed();
+            }
+            e.preventDefault();
+        },
+        { passive: false }
+    );
+
+    window.addEventListener(
+        "touchmove",
+        (e) => {
+            updateMouse(e);
+            if (typeof (window as any).mouseDragged === "function") {
+                (window as any).mouseDragged();
+            }
+            e.preventDefault();
+        },
+        { passive: false }
+    );
+
+    window.addEventListener(
+        "touchend",
+        (e) => {
+            if (typeof (window as any).mouseReleased === "function") {
+                (window as any).mouseReleased();
+            }
+            e.preventDefault();
+        },
+        { passive: false }
+    );
+}

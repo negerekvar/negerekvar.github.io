@@ -1,8 +1,6 @@
 // @ts-nocheck
 var panel = QuickSettings.create(10, 10, "🐦");
 panel.addText("Bir şeyler yaz", "", function (value) { output(value) });
-panel.addHTML("info", "Turn it off and back on again");
-panel.addHTML("fps", "");
 panel.hideAllTitles();
 var bbox;
 // { x: 0, y: -143, h: 145.4, w: 404.6, advance: 0 }
