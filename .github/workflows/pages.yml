@@ -25,20 +25,27 @@ jobs:
           cache: npm
 
       - name: Install deps
+        # This installs typescript because it is in your devDependencies
         run: npm ci
 
       - name: Build
+        # This runs "tsc". If you have Type errors, the workflow will stop here (Red X).
         run: npm run build
 
       - name: Prep deploy bundle
         run: |
-          mkdir -p dist
-          cp -r index.html style.css images demos fonts build dist/
+          # 1. Create a unique folder for deployment
+          mkdir _site_deploy
+
+          # 2. Copy EVERYTHING (html, css, compiled js, images) into it
+          # We exclude node_modules (heavy) and .git (hidden history)
+          # We also exclude the folder we are creating (_site_deploy) to prevent loops
+          rsync -av . _site_deploy --exclude node_modules --exclude .git --exclude .github --exclude _site_deploy
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: _site_deploy
 
   deploy:
     needs: build
