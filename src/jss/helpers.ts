@@ -193,10 +193,50 @@ if (typeof window !== "undefined" && !window.QuickSettings) {
     };
 }
 
+// Global lightweight performance tweaks for all sketches.
+if (typeof window !== "undefined") {
+    let patched = false;
+    const applyPerfTweaks = () => {
+        const p5ref = (window as any).p5;
+        if (patched || !p5ref || !p5ref.prototype) return;
+        patched = true;
+
+        // Friendly errors slow things down; disable for production demos.
+        p5ref.disableFriendlyErrors = true;
+
+        const disableSmoothing = (renderer: any) => {
+            const ctx = renderer?.drawingContext;
+            if (ctx) ctx.imageSmoothingEnabled = false;
+        };
+
+        const patchCanvas = (method: "createCanvas" | "createGraphics") => {
+            const original = p5ref.prototype[method];
+            if (typeof original !== "function") return;
+            p5ref.prototype[method] = function (...args: any[]) {
+                const renderer = original.apply(this, args);
+                if (typeof this.pixelDensity === "function") {
+                    this.pixelDensity(1); // reduce retina workload
+                }
+                disableSmoothing(renderer || this._renderer);
+                return renderer;
+            };
+        };
+
+        patchCanvas("createCanvas");
+        patchCanvas("createGraphics");
+    };
+
+    if ((window as any).p5) {
+        applyPerfTweaks();
+    } else {
+        window.addEventListener("load", applyPerfTweaks, { once: true });
+    }
+}
+
 // Basic touch support so mouse-driven sketches respond on touch devices.
 if (typeof window !== "undefined") {
     const updateMouse = (e: TouchEvent) => {
-        const t = e.touches[0];
+        const t = e.touches[0] || e.changedTouches[0];
         if (!t) return;
         (window as any).mouseX = t.clientX;
         (window as any).mouseY = t.clientY;
@@ -229,6 +269,7 @@ if (typeof window !== "undefined") {
     window.addEventListener(
         "touchend",
         (e) => {
+            updateMouse(e);
             if (typeof (window as any).mouseReleased === "function") {
                 (window as any).mouseReleased();
             }

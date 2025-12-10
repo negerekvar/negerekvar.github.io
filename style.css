@@ -112,6 +112,7 @@ canvas {
     padding: 0;
     z-index: 9999;
     backdrop-filter: blur(4px);
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 .viewer.hidden {
@@ -138,8 +139,8 @@ canvas {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 28px;
-    width: 44px;
-    height: 44px;
+    width: clamp(48px, 11vw, 56px);
+    height: clamp(48px, 11vw, 56px);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -193,4 +194,34 @@ canvas {
 }
 .qs_button:hover {
     transform: translateY(-1px);
+}
+
+@media (max-width: 720px) {
+    .hero {
+        padding: 40px 18px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero__sub {
+        font-size: 15px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 14px;
+        padding: 12px 14px 36px;
+    }
+
+    .card {
+        min-height: 160px;
+    }
+
+    .viewer__close {
+        top: calc(12px + env(safe-area-inset-top));
+        right: calc(12px + env(safe-area-inset-right));
+        font-size: 26px;
+    }
 }
