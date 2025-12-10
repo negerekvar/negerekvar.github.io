@@ -1,6 +1,6 @@
 // @ts-nocheck
-var panel = QuickSettings.create(10, 10, "Panel");
-var options = {
+let panel = QuickSettings.create(10, 10, "Panel");
+let options = {
 
     Animate: true,
 };
@@ -27,7 +27,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     fill("#FF9F1C");
     /*istersen gölge ekle */
@@ -45,7 +45,7 @@ function setup() {
     // strokeWeight(1);
     colorMode(HSB);
 
-    for (var a = 0; a < 100; a++) {
+    for (let a = 0; a < 100; a++) {
         arr.push(new Particle(random(width), random(height)));
     }
 
@@ -55,9 +55,9 @@ function draw() {
     panel.setValue("FPS", ~~getFrameRate());
     clear();
     let yoff = 0;
-    for (var y = 0; y < rows + 1; y++) {
+    for (let y = 0; y < rows + 1; y++) {
         let xoff = 0;
-        for (var x = 0; x < cols + 1; x++) {
+        for (let x = 0; x < cols + 1; x++) {
             let index = (x + y * (cols + 1));
             let r = noise(xoff, yoff, zoff, frameCount) * 360 * 4;
             xoff += inc;
@@ -79,7 +79,7 @@ function draw() {
         yoff += inc;
         zoff += .0005
     }
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         let bu = arr[i];
         bu.follow(flowfield);
         bu.edgecheck();

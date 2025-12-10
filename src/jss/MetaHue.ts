@@ -3,8 +3,8 @@ let arr = [];
 let step = 0
 let theta = 0;
 let circ;
-var panel = QuickSettings.create(10, 10, "Panel");
-var options = {
+let panel = QuickSettings.create(10, 10, "Panel");
+let options = {
     col: 1000,
 
 }
@@ -34,8 +34,8 @@ function setup() {
     angleMode(DEGREES);
     pixelDensity(1);
     colorMode(HSB, 100);
-    for (var y = 0; y < height; y += 50) {
-        for (var x = 0; x < width; x += 50) {
+    for (let y = 0; y < height; y += 50) {
+        for (let x = 0; x < width; x += 50) {
             arr.push({ vec: createVector(x, y), col: noise(theta) });
             theta += .1;
         }
@@ -46,7 +46,7 @@ function setup() {
 
 function draw() {
     clear();
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         let bu = arr[i];
 
         let dst = bu.vec.dist(circ);
@@ -60,9 +60,9 @@ function draw() {
 }
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

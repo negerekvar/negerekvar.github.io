@@ -7,7 +7,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     fill("#FF9F1C");
     /*istersen gölge ekle */
@@ -48,9 +48,9 @@ function draw() {
 }
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

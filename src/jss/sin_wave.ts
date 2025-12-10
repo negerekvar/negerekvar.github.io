@@ -12,7 +12,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     w = width + 16;
     dx = (TWO_PI / period) * xspacing;
@@ -35,8 +35,8 @@ function calcWave() {
     theta += 0.02;
 
     // For every x value, calculate a y value with sine function
-    var x = theta;
-    for (var i = 0; i < yvalues.length; i++) {
+    let x = theta;
+    for (let i = 0; i < yvalues.length; i++) {
         yvalues[i] = sin(x) * amplitude;
         x += dx;
     }
@@ -47,7 +47,7 @@ function renderWave() {
 
     // A simple way to draw the wave with an ellipse at each location
     // beginShape()
-    for (var x = 0; x < yvalues.length; x++) {
+    for (let x = 0; x < yvalues.length; x++) {
         ellipse(x * xspacing, height / 2 + yvalues[x], radius, radius);
 
     }

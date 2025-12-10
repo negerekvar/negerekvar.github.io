@@ -5,7 +5,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     // fill("#FF9F1C");git remote update
     // 
@@ -17,25 +17,25 @@ function setup() {
     noFill();
     ellipseMode(CENTER);
     strokeWeight(.5);
-    for (var a = 0; a < 200; a++) {
+    for (let a = 0; a < 200; a++) {
         arr.push(new Yeter());
     }
 }
 function draw() {
     clear();
-    for (var i = 0; i < arr.length - 1; i++) {
+    for (let i = 0; i < arr.length - 1; i++) {
         arr[i].git();
-        for (var z = i + 1; z < arr.length; z++) {
-            var d = arr[i].pos.dist(arr[z].pos);
+        for (let z = i + 1; z < arr.length; z++) {
+            let d = arr[i].pos.dist(arr[z].pos);
             ;
             (d < arr[i].dst) && (line(arr[i].x, arr[i].y, arr[z].x, arr[z].y));
         }
     }
 }
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

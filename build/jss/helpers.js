@@ -12,11 +12,10 @@ function $(selector) {
     };
 }
 function getContainerSize() {
-    var _a, _b;
     const el = document.getElementById("myContainer");
     return {
-        w: (_a = el === null || el === void 0 ? void 0 : el.clientWidth) !== null && _a !== void 0 ? _a : window.innerWidth,
-        h: (_b = el === null || el === void 0 ? void 0 : el.clientHeight) !== null && _b !== void 0 ? _b : window.innerHeight
+        w: el?.clientWidth ?? window.innerWidth,
+        h: el?.clientHeight ?? window.innerHeight
     };
 }
 function setText(id, value) {
@@ -196,10 +195,48 @@ if (typeof window !== "undefined" && !window.QuickSettings) {
         create: (x, y, title) => new BasicPanel(x, y, title)
     };
 }
+// Global lightweight performance tweaks for all sketches.
+if (typeof window !== "undefined") {
+    let patched = false;
+    const applyPerfTweaks = () => {
+        const p5ref = window.p5;
+        if (patched || !p5ref || !p5ref.prototype)
+            return;
+        patched = true;
+        // Friendly errors slow things down; disable for production demos.
+        p5ref.disableFriendlyErrors = true;
+        const disableSmoothing = (renderer) => {
+            const ctx = renderer?.drawingContext;
+            if (ctx)
+                ctx.imageSmoothingEnabled = false;
+        };
+        const patchCanvas = (method) => {
+            const original = p5ref.prototype[method];
+            if (typeof original !== "function")
+                return;
+            p5ref.prototype[method] = function (...args) {
+                const renderer = original.apply(this, args);
+                if (typeof this.pixelDensity === "function") {
+                    this.pixelDensity(1); // reduce retina workload
+                }
+                disableSmoothing(renderer || this._renderer);
+                return renderer;
+            };
+        };
+        patchCanvas("createCanvas");
+        patchCanvas("createGraphics");
+    };
+    if (window.p5) {
+        applyPerfTweaks();
+    }
+    else {
+        window.addEventListener("load", applyPerfTweaks, { once: true });
+    }
+}
 // Basic touch support so mouse-driven sketches respond on touch devices.
 if (typeof window !== "undefined") {
     const updateMouse = (e) => {
-        const t = e.touches[0];
+        const t = e.touches[0] || e.changedTouches[0];
         if (!t)
             return;
         window.mouseX = t.clientX;
@@ -220,6 +257,7 @@ if (typeof window !== "undefined") {
         e.preventDefault();
     }, { passive: false });
     window.addEventListener("touchend", (e) => {
+        updateMouse(e);
         if (typeof window.mouseReleased === "function") {
             window.mouseReleased();
         }

@@ -1,6 +1,6 @@
 // @ts-nocheck
-var panel = QuickSettings.create(10, 10, "Panel");
-var options = {
+let panel = QuickSettings.create(10, 10, "Panel");
+let options = {
     r: 120,
     min: 30,
     Animate: true,

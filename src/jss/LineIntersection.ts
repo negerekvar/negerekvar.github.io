@@ -1,5 +1,5 @@
 // @ts-nocheck
-var panel = QuickSettings.create(10, 10, "🎯");
+let panel = QuickSettings.create(10, 10, "🎯");
 let x1 = Math.random() * innerWidth,
     x2 = Math.random() * innerWidth,
     y1 = Math.random() * innerHeight,
@@ -17,7 +17,7 @@ panel.addRange("Y2", 0, innerHeight, y2, 1, (val) => {
     y2 = val
 })
 panel.addHTML("HitPoint", "");
-var cols = new Array(100),
+let cols = new Array(100),
     Fx1 = 0,
     Fx2 = 0,
     Fy1 = 0,
@@ -28,7 +28,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     fill("#FF9F1C");
     /*istersen gölge ekle */
@@ -64,9 +64,9 @@ function draw() {
 
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
@@ -78,7 +78,7 @@ function windowResized() {
 }
 
 function ddd() {
-    var top = sin(Fx1),
+    let top = sin(Fx1),
         bottom = sin(Fx2),
         right = cos(Fy1),
         left = cos(Fy2),

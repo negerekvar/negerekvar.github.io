@@ -1,5 +1,5 @@
 // @ts-nocheck
-var panel = QuickSettings.create(10, 10, "🎯");
+let panel = QuickSettings.create(10, 10, "🎯");
 let x1 = Math.random() * innerWidth, x2 = Math.random() * innerWidth, y1 = Math.random() * innerHeight, y2 = Math.random() * innerHeight;
 panel.addRange("X1", 0, innerWidth, x1, 1, (val) => {
     x1 = val;
@@ -14,12 +14,12 @@ panel.addRange("Y2", 0, innerHeight, y2, 1, (val) => {
     y2 = val;
 });
 panel.addHTML("HitPoint", "");
-var cols = new Array(100), Fx1 = 0, Fx2 = 0, Fy1 = 0, Fy2 = 0;
+let cols = new Array(100), Fx1 = 0, Fx2 = 0, Fy1 = 0, Fy2 = 0;
 function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     fill("#FF9F1C");
     /*istersen gölge ekle */
@@ -49,9 +49,9 @@ function draw() {
     pop();
 }
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
@@ -60,7 +60,7 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
 function ddd() {
-    var top = sin(Fx1), bottom = sin(Fx2), right = cos(Fy1), left = cos(Fy2), LineTop = map(top, -1, 1, 0, width), LineBottom = map(bottom, -1, 1, 0, width), LineRight = map(right, -1, 1, 0, height), LineLeft = map(left, -1, 1, 0, height), r = map(top, -1, 1, 0, 255), g = map(bottom, -1, 1, 0, 255), b = map(right, -1, 1, 0, 255);
+    let top = sin(Fx1), bottom = sin(Fx2), right = cos(Fy1), left = cos(Fy2), LineTop = map(top, -1, 1, 0, width), LineBottom = map(bottom, -1, 1, 0, width), LineRight = map(right, -1, 1, 0, height), LineLeft = map(left, -1, 1, 0, height), r = map(top, -1, 1, 0, 255), g = map(bottom, -1, 1, 0, 255), b = map(right, -1, 1, 0, 255);
     stroke(r, g, b);
     Fx1 += .001;
     Fx2 += .003;

@@ -1,9 +1,9 @@
 // @ts-nocheck
-// var panel = QuickSettings.create(10, 10, "🐦");
+// let panel = QuickSettings.create(10, 10, "🐦");
 // panel.addHTML("info", "");
 // panel.addButton(" Saçma isim ", function() {
 
-//     var settings = {
+//     let settings = {
 //         "async": true,
 //         "crossDomain": true,
 //         "url": "http://localhost/isimler.json",
@@ -23,7 +23,7 @@
 
 //     });
 // });
-var cols = new Array(100);
+let cols = new Array(100);
 
 
 function setup() {
@@ -31,7 +31,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     fill("#FF9F1C");
     /*istersen gölge ekle */
@@ -41,7 +41,7 @@ function setup() {
     // drawingContext.shadowColor = "black";
     rectMode(CENTER);
     noFill();
-    for (var i = 0; i < cols.length; i++) {
+    for (let i = 0; i < cols.length; i++) {
         cols[i] = new rects(random(width), random(height));
     }
     stroke("#fff");
@@ -50,7 +50,7 @@ function setup() {
 
 function draw() {
     background("#000")
-    for (var i = 0; i < cols.length; i++) {
+    for (let i = 0; i < cols.length; i++) {
         cols[i].draw();
         // cols[i].move();
     }
@@ -58,9 +58,9 @@ function draw() {
 
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

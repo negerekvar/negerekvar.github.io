@@ -1,12 +1,12 @@
 // @ts-nocheck
-var panel = QuickSettings.create(10, 10, "🐦");
+let panel = QuickSettings.create(10, 10, "🐦");
 panel.addText("Bir şeyler yaz", "", function (value) { output(value); });
 panel.hideAllTitles();
-var bbox;
+let bbox;
 // { x: 0, y: -143, h: 145.4, w: 404.6, advance: 0 }
-var zarray = [];
-var objarray = [];
-var buffer;
+let zarray = [];
+let objarray = [];
+let buffer;
 function preload() {
     font = loadFont("/fonts/AvenirNextLTPro-Demi.otf");
 }
@@ -14,7 +14,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     buffer = createGraphics(x, y);
     buffer.noStroke();
@@ -25,7 +25,7 @@ function draw() {
     clear();
     image(buffer, 0, 0);
     let active = 0;
-    for (var i = 0; i < objarray.length; i++) {
+    for (let i = 0; i < objarray.length; i++) {
         objarray[i].go();
         active += objarray[i].active ? 1 : 0;
     }
@@ -34,14 +34,14 @@ function draw() {
 }
 function output(_bar) {
     bbox = font.textBounds(_bar, 100, 200, 192);
-    var bx = width * .5 - (bbox.w * .5);
-    var by = height * .5 + (bbox.h * .5);
+    let bx = width * .5 - (bbox.w * .5);
+    let by = height * .5 + (bbox.h * .5);
     zarray = font.textToPoints(_bar, bx, by, 192, {
         sampleFactor: 0.087
     });
     buffer.clear();
     objarray = new Array(zarray.length);
-    for (var i = 0; i < zarray.length; i++) {
+    for (let i = 0; i < zarray.length; i++) {
         objarray[i] = new Boom(zarray[i].x, zarray[i].y);
     }
 }
@@ -69,9 +69,9 @@ function Boom(x, y) {
     };
 }
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

@@ -1,6 +1,6 @@
 // @ts-nocheck
-var panel = QuickSettings.create(10, 10, "Panel");
-var options = {
+let panel = QuickSettings.create(10, 10, "Panel");
+let options = {
     map_max: 1517,
     offset: 30,
     Animate: true,
@@ -35,7 +35,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     fill("#FF9F1C");
     colorMode(HSB);
@@ -45,8 +45,8 @@ function setup() {
     // drawingContext.shadowBlur = 5;
     // drawingContext.shadowColor = "black";
     rectMode(CENTER);
-    for (var x = 0; x < width; x += 25) {
-        for (var y = 0; y < height; y += 25) {
+    for (let x = 0; x < width; x += 25) {
+        for (let y = 0; y < height; y += 25) {
             positions.push({ vec: createVector(x, y), harf: getRandomString(1), color: getRandomColor() });
         }
     }
@@ -59,8 +59,8 @@ function setup() {
 function draw() {
     panel.setValue("FPS", ~~frameRate());
     clear();
-    for (var x = width - 1; x >= -options.offset; x -= options.offset) {
-        for (var y = height - 1; y >= -options.offset; y -= options.offset) {
+    for (let x = width - 1; x >= -options.offset; x -= options.offset) {
+        for (let y = height - 1; y >= -options.offset; y -= options.offset) {
             let c = map(diist(pt.x, pt.y, x, y), 0, options.map_max, 0, 360);
             fill(c, 100, 100);
             rect(x, y, options.offset, options.offset);
@@ -76,9 +76,9 @@ function mousePressed() {
 }
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
@@ -89,11 +89,10 @@ function windowResized() {
 
 }
 
-function getRandomString(n) {
-    var n = n || 9;
-    var letters = '0123456789ABCÇDEFGĞHİIJKLMNOÖPRSŞTUÜVYZabcçdefgğhıijklmnoöprsştuüvyz'.split('');
-    var returnString = "";
-    for (var i = 0; i < n; i++) {
+function getRandomString(n = 9) {
+    const letters = '0123456789ABCÇDEFGĞHİIJKLMNOÖPRSŞTUÜVYZabcçdefgğhıijklmnoöprsştuüvyz'.split('');
+    let returnString = "";
+    for (let i = 0; i < n; i++) {
         returnString += letters[~~(Math.random() * letters.length)];
     }
     return returnString;

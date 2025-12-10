@@ -1,9 +1,9 @@
 // @ts-nocheck
-var arr = new Array();
+let arr = new Array();
 let pass = false;
-var panel = QuickSettings.create(10, 10, "");
-var tries = 0;
-var _show = true;
+let panel = QuickSettings.create(10, 10, "");
+let tries = 0;
+let _show = true;
 panel.addHTML("Count", "<p>tries</p><a href=\"#\" id=\"v1\"></a> <br><p>success</p><b  id=\"v2\"></b>");
 panel.addBoolean("Show", true, function (value) {
     _show = value;
@@ -12,7 +12,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     // fill("#FF9F1C");git remote update
     // 
@@ -34,20 +34,20 @@ function draw() {
     arr.push(new Circle());
     setText("v1", tries);
     tries++;
-    for (var i = 0; i < arr.length - 1; i++) {
+    for (let i = 0; i < arr.length - 1; i++) {
         (arr[arr.length - 1].pos.dist(arr[i].pos) < (arr[i].r + arr[arr.length - 1].r) / 2) && (arr.pop());
     }
     if (_show) {
-        for (var z = 0; z < arr.length; z++) {
+        for (let z = 0; z < arr.length; z++) {
             arr[z].draw();
         }
     }
     setText("v2", arr.length);
 }
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

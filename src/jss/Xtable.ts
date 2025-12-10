@@ -9,7 +9,7 @@ let options = {
     N: 1,
     X: .01
 }
-var panel = QuickSettings.create(10, 10, "Panel");
+let panel = QuickSettings.create(10, 10, "Panel");
 panel.bindRange("r", 20, innerHeight / 2 - 10, 100, 1, params);
 panel.bindRange("N", 3, 500, 10, 1, params);
 panel.bindRange("X", 1, 99, 2, .01, params);
@@ -45,7 +45,7 @@ function draw() {
     translate(width * .5, height * .5);
     rotate(180);
 
-    for (var a = 0; a < params.N; a++) {
+    for (let a = 0; a < params.N; a++) {
 
         let x = cos(theta) * params.r;
         let y = sin(theta) * params.r;
@@ -59,7 +59,7 @@ function draw() {
 
     };
     arr.length = params.N;
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
 
         dot1 = createVector(arr[i].x, arr[i].y);
         last = ~~(i * params.X);
@@ -80,9 +80,9 @@ function draw() {
 }
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

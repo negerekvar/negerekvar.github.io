@@ -11,9 +11,9 @@ function Vehicle(x, y) {
     this.color = "#" + random(["f72585", "b5179e", "7209b7", "560bad", "480ca8", "3a0ca3", "3f37c9", "4361ee", "4895ef", "4cc9f0"]);
 }
 Vehicle.prototype.behaviors = function () {
-    var arrive = this.arrive(this.target);
-    var mouse = createVector(mouseX, mouseY);
-    var flee = this.flee(mouse);
+    let arrive = this.arrive(this.target);
+    let mouse = createVector(mouseX, mouseY);
+    let flee = this.flee(mouse);
     arrive.mult(1);
     flee.mult(5);
     this.applyForce(arrive);
@@ -33,24 +33,24 @@ Vehicle.prototype.show = function () {
     point(this.pos.x, this.pos.y);
 };
 Vehicle.prototype.arrive = function (target) {
-    var desired = p5.Vector.sub(target, this.pos);
-    var d = desired.mag();
-    var speed = this.maxspeed;
+    let desired = p5.Vector.sub(target, this.pos);
+    let d = desired.mag();
+    let speed = this.maxspeed;
     if (d < 100) {
         speed = map(d, 0, 100, 0, this.maxspeed);
     }
     desired.setMag(speed);
-    var steer = p5.Vector.sub(desired, this.vel);
+    let steer = p5.Vector.sub(desired, this.vel);
     steer.limit(this.maxforce);
     return steer;
 };
 Vehicle.prototype.flee = function (target) {
-    var desired = p5.Vector.sub(target, this.pos);
-    var d = desired.mag();
+    let desired = p5.Vector.sub(target, this.pos);
+    let d = desired.mag();
     if (d < 50) {
         desired.setMag(this.maxspeed);
         desired.mult(-1);
-        var steer = p5.Vector.sub(desired, this.vel);
+        let steer = p5.Vector.sub(desired, this.vel);
         steer.limit(this.maxforce);
         return steer;
     }

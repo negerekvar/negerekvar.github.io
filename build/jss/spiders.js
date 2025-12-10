@@ -9,8 +9,8 @@
 //  ░    ░  ░░░ ░ ░       ░   ░ ░    ░        ░ ░    ░   ▒      ░   ░ ░    
 //  ░         ░                 ░    ░  ░       ░  ░     ░  ░         ░    
 //       ░
-var arr = [];
-var mycanvas;
+let arr = [];
+let mycanvas;
 function setup() {
     const size = getContainerSize();
     x = size.w;
@@ -25,7 +25,7 @@ function setup() {
     // drawingContext.shadowOffsetY = -1;
     // drawingContext.shadowBlur = 5;
     // drawingContext.shadowColor = "black";
-    for (var i = 0; i < 150; i++) {
+    for (let i = 0; i < 150; i++) {
         arr.push(new DD());
         //pix.push(new SS(random(width), height / 2));
     }
@@ -35,9 +35,9 @@ function setup() {
 }
 function draw() {
     background("#268BD2");
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         //pix[i].move();
-        for (var z = 0; z < arr.length; z++) {
+        for (let z = 0; z < arr.length; z++) {
             if (i != z && arr[i].intersect(arr[z])) {
                 line(arr[i].pos.x, arr[i].pos.y, arr[z].pos.x, arr[z].pos.y);
             }
@@ -49,9 +49,9 @@ function draw() {
     setText("adet", arr.length);
 }
 // function getRandomColor() {
-//     var letters = '0123456789ABCDEF'.split('');
-//     var color = '#';
-//     for (var i = 0; i < 6; i++) {
+//     let letters = '0123456789ABCDEF'.split('');
+//     let color = '#';
+//     for (let i = 0; i < 6; i++) {
 //         color += letters[Math.floor(Math.random() * 16)];
 //     }
 //     return color;
@@ -94,9 +94,9 @@ function mousePressed() {
     console.log(mouseX + ":" + mouseY);
 }
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

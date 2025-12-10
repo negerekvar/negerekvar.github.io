@@ -1,7 +1,7 @@
 // @ts-nocheck
-var arr = [];
-var points;
-var font;
+let arr = [];
+let points;
+let font;
 function preload() {
     font = loadFont('fonts/AvenirNextLTPro-Demi.otf');
 }
@@ -9,7 +9,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     fill("#FF9F1C");
     /*istersen gölge ekle */
@@ -21,7 +21,7 @@ function setup() {
     // drawingContext.globalCompositeOperation = "lighter";
     noStroke();
     points = Calculate_Place("Naber");
-    for (var a = 0; a < points.length; a++) {
+    for (let a = 0; a < points.length; a++) {
         arr.push(new Mover(a));
     }
 }
@@ -30,14 +30,14 @@ function draw() {
     // translate(width * 0.5, height * 0.5)
     // rect(center.x - (bbox.w / 2), center.y - (bbox.h / 2), bbox.w, bbox.h);
     // ellipse(width * 0.5, height * 0.5, 60, 60)
-    for (var i in arr) {
+    for (let i in arr) {
         arr[i].calc();
     }
 }
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
@@ -75,7 +75,7 @@ p5.Vector.prototype.checkloc = function () {
 };
 function keyPressed() {
     if (keyCode === 13) {
-        for (var i in arr) {
+        for (let i in arr) {
             arr[i].flag = !arr[i].flag;
         }
     }

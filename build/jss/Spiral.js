@@ -1,6 +1,6 @@
 // @ts-nocheck
-var panel = QuickSettings.create(10, 10, "Panel");
-var options = {
+let panel = QuickSettings.create(10, 10, "Panel");
+let options = {
     a: 5,
     n: 2000,
     c: .01,
@@ -36,8 +36,8 @@ function setup() {
     noFill();
     noStroke();
     stroke("black");
-    for (var x = 0; x < width; x += 50) {
-        for (var y = 0; y < height; y += 50) {
+    for (let x = 0; x < width; x += 50) {
+        for (let y = 0; y < height; y += 50) {
             arr.push(createVector(x, y));
         }
     }
@@ -67,9 +67,9 @@ function mouseClicked() {
     // let vec = createVector(mouseX, mouseY);
 }
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

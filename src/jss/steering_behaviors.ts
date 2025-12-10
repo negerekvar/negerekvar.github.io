@@ -1,9 +1,9 @@
 // @ts-nocheck
-var sample = []
-var offset;
-var points;
-var vehicles = [];
-var _text = "merhaba_dünya";
+let sample = []
+let offset;
+let points;
+let vehicles = [];
+let _text = "merhaba_dünya";
 
 
 console.log("merhaba dünya!!!")
@@ -17,7 +17,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     offset = font.textBounds(_text, 0, 0, 150);
     sample = font.textToPoints(_text, width * .5 - (offset.w / 2), height * .5, 150, {
@@ -30,9 +30,9 @@ function setup() {
     // drawingContext.shadowColor = "black";
 
 
-    for (var i = 0; i < sample.length; i++) {
-        var pt = sample[i];
-        var vehicle = new Vehicle(pt.x, pt.y);
+    for (let i = 0; i < sample.length; i++) {
+        let pt = sample[i];
+        let vehicle = new Vehicle(pt.x, pt.y);
         vehicles.push(vehicle);
 
         // point(pt.x, pt.y);
@@ -46,8 +46,8 @@ function draw() {
     stroke(0);
     strokeWeight(8);
 
-    for (var i = 0; i < vehicles.length; i++) {
-        var v = vehicles[i];
+    for (let i = 0; i < vehicles.length; i++) {
+        let v = vehicles[i];
         v.behaviors();
         v.update();
         v.show();
@@ -56,9 +56,9 @@ function draw() {
 
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

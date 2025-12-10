@@ -37,8 +37,8 @@ let arr = [];
 let t = 0;
 function draw() {
     clear();
-    for (var a = -params._size; a < width + params._size; a += params._size) {
-        for (var z = -params._size; z < height + params._size; z += params._size) {
+    for (let a = -params._size; a < width + params._size; a += params._size) {
+        for (let z = -params._size; z < height + params._size; z += params._size) {
             push();
             translate(a, z);
             let dx = mouseX - a;
@@ -60,9 +60,9 @@ function draw() {
 }
 ;
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

@@ -7,7 +7,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     fill("#FF9F1C");
     /*istersen gölge ekle */
@@ -20,8 +20,8 @@ function setup() {
     strokeWeight(4)
     noFill();
     // colorMode(HSB, 100);
-    for (var x = 0; x < width; x += 25) {
-        for (var y = 0; y < height; y += 25) {
+    for (let x = 0; x < width; x += 25) {
+        for (let y = 0; y < height; y += 25) {
             arr.push(new Particle(x, y));
         }
     }
@@ -32,11 +32,11 @@ function draw() {
     clear();
     // background(100, 10);
     point(att.x, att.y);
-    for (var i = 0, len = att.length; i < len; i++) {
+    for (let i = 0, len = att.length; i < len; i++) {
         point(att[i].x, att[i].y);
     }
-    for (var i = 0, len = arr.length; i < len; i++) {
-        for (var z = 0; z < att.length; z++) {
+    for (let i = 0, len = arr.length; i < len; i++) {
+        for (let z = 0; z < att.length; z++) {
 
             arr[i].attract(att[z]);
 
@@ -48,9 +48,9 @@ function draw() {
 }
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
@@ -86,13 +86,13 @@ Particle.prototype.show = function() {
     point(this.pos.x, this.pos.y);
 };
 Particle.prototype.attract = function(target) {
-    var force = p5.Vector.sub(target, this.pos);
-    var d = force.mag();
+    let force = p5.Vector.sub(target, this.pos);
+    let d = force.mag();
     d = constrain(d, 1, 25);
     // let clr = map(target.dist(this.pos), 0, 1517, 0, 360);
     // stroke(clr, 100, 100)
-    var G = 10;
-    var strength = G / (d * d);
+    let G = 10;
+    let strength = G / (d * d);
     force.setMag(strength);
     if (d < 23) {
         force.mult(-10);

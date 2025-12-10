@@ -8,7 +8,7 @@ let img = new Array(18);
 let hue = .1;
 
 function preload() {
-    for (var i = 0; i < img.length; i++) {
+    for (let i = 0; i < img.length; i++) {
         img[i] = loadImage("../images/" + i + ".png");
     }
 
@@ -19,7 +19,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     fill("#FF9F1C");
     /*istersen gölge ekle */
@@ -33,7 +33,7 @@ function setup() {
     imageMode(CENTER);
     // noStroke();
     textAlign(CENTER, CENTER);
-    for (var a = 0; a < 20; a++) {
+    for (let a = 0; a < 20; a++) {
         kare.push(new Mover(random(width), random(height)));
     };
     noFill();
@@ -48,7 +48,7 @@ function draw() {
     clear();
     strokeWeight(size);
     beginShape();
-    for (var a = 0, len = kare.length; a !== len; a++) {
+    for (let a = 0, len = kare.length; a !== len; a++) {
 
         kare[a].update(window.speed);
     }
@@ -57,9 +57,9 @@ function draw() {
 }
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;

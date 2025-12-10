@@ -21,7 +21,7 @@ function setup() {
     // noFill();
     noStroke();
     console.log("second");
-    for (var a = 0; a < 20; a++) {
+    for (let a = 0; a < 20; a++) {
         arr.push(new Mover())
     }
     fill("black")
@@ -32,7 +32,7 @@ function draw() {
 
 
 
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         arr[i].update();
         arr[i].show();
     }
@@ -44,9 +44,9 @@ function mousePressed() {
 }
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
@@ -71,7 +71,7 @@ Mover.prototype.update = function() {
     (this.pos.dist(this.target) < 10) && (this.target = createVector(random(width), random(height)));
 };
 Mover.prototype.show = function() {
-    for (var i = 0; i < this.hist.length; i++) {
+    for (let i = 0; i < this.hist.length; i++) {
         fill((map(i, 0, this.hist.length, 0, 360)), 100, 100);
         let size = map(i, 0, this.hist.length, 10, 30)
         let bu = this.hist[i];

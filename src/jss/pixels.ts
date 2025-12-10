@@ -1,12 +1,12 @@
 // @ts-nocheck
-var yoff = 22;
-var xoff = 0;
-var ne = [];
-var ko = [];
-var bu = [];
-var vid;
+let yoff = 22;
+let xoff = 0;
+let ne = [];
+let ko = [];
+let bu = [];
+let vid;
 
-var _index;
+let _index;
 
 function preload() {
     img = loadImage("../images/cat.jpg", function() {
@@ -28,7 +28,7 @@ function setup() {
     const size = getContainerSize();
     x = size.w;
     y = size.h;
-    var mycanvas = createCanvas(x, y);
+    let mycanvas = createCanvas(x, y);
     mycanvas.parent("myContainer"); /* id ile seçiyor classla değil */
     fill("#FF9F1C");
     rectMode(CENTER);
@@ -44,11 +44,11 @@ function setup() {
     img.loadPixels();
     img2.loadPixels();
 
-    for (var x = 0; x < img.width; x++) {
-        for (var y = 0; y < img.height; y++) {
+    for (let x = 0; x < img.width; x++) {
+        for (let y = 0; y < img.height; y++) {
             _index = (x + y * img.width) * 4;
             bw = (img.pixels[_index] + img.pixels[_index + 1] + img.pixels[_index + 2]) / 3
-            var w = map(bw, 0, 255, 5, 10);
+            let w = map(bw, 0, 255, 5, 10);
             ne.push({
                 x: (x * 5) + mid_point.x - (img.width / 2) * 5,
                 y: (y * 5) + mid_point.y - (img.height / 2) * 5,
@@ -59,10 +59,10 @@ function setup() {
             })
         }
     }
-    for (var i = 0; i < ne.length; i++) {
-        var vec = createVector(ne[i].x, ne[i].y);
-        var col = ne[i].color;
-        var nx_col = ne[i].color2;
+    for (let i = 0; i < ne.length; i++) {
+        let vec = createVector(ne[i].x, ne[i].y);
+        let col = ne[i].color;
+        let nx_col = ne[i].color2;
         bu.push(new Git(vec, col, nx_col));
     }
 
@@ -72,7 +72,7 @@ function setup() {
 
 function draw() {
     clear();
-    for (var i = 0; i < bu.length; i++) {
+    for (let i = 0; i < bu.length; i++) {
         bu[i].oraya();
         bu[i].ciz();
         bu[i].check_next();
@@ -82,9 +82,9 @@ function draw() {
 
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
