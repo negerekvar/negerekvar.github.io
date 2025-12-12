@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#0a0a0f">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+<meta name="description" content="Perlin noise grid">
+<meta name="author" content="Volkan">
+<html>
+
+<head>
+    <title>PerlinGrid</title>
+    <link rel="stylesheet" type="text/css" href="/style.css?v=20251214" />
+    <style>
+        :root {
+            --bg: #05050a;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: var(--bg);
+            color: #e5e7eb;
+            font-family: 'Dosis', 'Helvetica Neue', Arial, sans-serif;
+            overflow: hidden;
+        }
+        canvas#noiseCanvas {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+        .overlay {
+            position: fixed;
+            top: 12px;
+            left: 12px;
+            background: rgba(0, 0, 0, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 12px;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+        }
+        .overlay label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            white-space: nowrap;
+            width: 260px;
+        }
+        .overlay label span {
+            flex: 1 0 auto;
+        }
+        .overlay strong {
+            display: inline-block;
+            min-width: 54px;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        .overlay input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 6px;
+            width: 160px;
+            min-width: 160px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.14);
+            outline: none;
+            flex: 0 0 160px;
+        }
+        .overlay input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #7dd3fc;
+            box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.22);
+            cursor: pointer;
+        }
+        .overlay input[type="range"]::-moz-range-thumb {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #7dd3fc;
+            box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.22);
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="noiseCanvas"></canvas>
+    <div class="overlay">
+        <label>
+            <span>Speed: <strong id="val-speed"></strong></span>
+            <input id="inp-speed" type="range" min="0.001" max="0.05" step="0.001" value="0.008">
+        </label>
+        <label>
+            <span>Zoom: <strong id="val-zoom"></strong></span>
+            <input id="inp-zoom" type="range" min="0.02" max="0.6" step="0.01" value="0.15">
+        </label>
+        <label>
+            <span>Cell: <strong id="val-size"></strong></span>
+            <input id="inp-size" type="range" min="4" max="40" step="1" value="15">
+        </label>
+    </div>
+    <script src="../build/jss/PerlinGrid.js?v=20251214"></script>
+</body>
+
+</html>

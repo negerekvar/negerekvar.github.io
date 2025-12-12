@@ -2,7 +2,7 @@ const cards = Array.from(document.querySelectorAll<HTMLElement>(".card"));
 const viewer = document.getElementById("viewer") as HTMLElement | null;
 const frame = viewer?.querySelector("iframe") as HTMLIFrameElement | null;
 const closeBtn = viewer?.querySelector(".viewer__close") as HTMLButtonElement | null;
-const VERSION_TAG = "v=20251210";
+const VERSION_TAG = "v=20251214";
 
 const openDemo = (id: string): void => {
   if (!viewer || !frame) return;

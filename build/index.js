@@ -1,8 +1,8 @@
 const cards = Array.from(document.querySelectorAll(".card"));
 const viewer = document.getElementById("viewer");
-const frame = viewer === null || viewer === void 0 ? void 0 : viewer.querySelector("iframe");
-const closeBtn = viewer === null || viewer === void 0 ? void 0 : viewer.querySelector(".viewer__close");
-const VERSION_TAG = "v=20251210";
+const frame = viewer?.querySelector("iframe");
+const closeBtn = viewer?.querySelector(".viewer__close");
+const VERSION_TAG = "v=20251214";
 const openDemo = (id) => {
     if (!viewer || !frame)
         return;
@@ -25,7 +25,7 @@ const initNavigation = () => {
                 openDemo(id);
         });
     });
-    closeBtn === null || closeBtn === void 0 ? void 0 : closeBtn.addEventListener("click", closeDemo);
+    closeBtn?.addEventListener("click", closeDemo);
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape")
             closeDemo();
