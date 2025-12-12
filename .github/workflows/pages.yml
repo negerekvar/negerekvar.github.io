@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   # This line enables the "Run workflow" button in the Actions tab
   workflow_dispatch:
 
