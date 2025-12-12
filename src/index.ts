@@ -2,7 +2,7 @@ const cards = Array.from(document.querySelectorAll<HTMLElement>(".card"));
 const viewer = document.getElementById("viewer") as HTMLElement | null;
 const frame = viewer?.querySelector("iframe") as HTMLIFrameElement | null;
 const closeBtn = viewer?.querySelector(".viewer__close") as HTMLButtonElement | null;
-const VERSION_TAG = "v=20251217";
+const VERSION_TAG = "v=20251218";
 
 const codeModal = document.getElementById("code-modal") as HTMLElement | null;
 const codeModalDesc = document.getElementById("code-modal-desc") as HTMLElement | null;
@@ -12,6 +12,36 @@ const codeCloseTargets = Array.from(document.querySelectorAll("[data-close-code]
 
 const explanations: Record<string, string> = {
   PerlinGrid: "Perlin gürültüsünü kare ızgaraya boyar; hız/zoom/hücre boyutunu kaydırıcılardan değiştir."
+};
+
+const palette = [
+  "var(--charcoal-blue)",
+  "var(--pine-blue)",
+  "var(--verdigris)",
+  "var(--tuscan-sun)",
+  "var(--sunlit-clay)",
+  "var(--sandy-brown)",
+  "var(--sandy-brown-2)",
+  "var(--burnt-peach)",
+  "var(--burnt-peach-2)",
+  "var(--burnt-peach-3)"
+];
+
+const parseRgb = (value: string): { r: number; g: number; b: number } | null => {
+  const m = value.match(/rgba?\\(([^)]+)\\)/);
+  if (!m) return null;
+  const [r, g, b] = m[1].split(",").slice(0, 3).map((n) => parseFloat(n.trim()));
+  if ([r, g, b].some((n) => Number.isNaN(n))) return null;
+  return { r, g, b };
+};
+
+const getComputedRgb = (value: string): { r: number; g: number; b: number } | null => {
+  const el = document.createElement("div");
+  el.style.color = value;
+  document.body.appendChild(el);
+  const rgb = parseRgb(getComputedStyle(el).color);
+  document.body.removeChild(el);
+  return rgb;
 };
 
 const addCodeButtons = (): void => {
@@ -28,6 +58,13 @@ const addCodeButtons = (): void => {
       if (id) openCodeModal(id);
     });
     card.appendChild(btn);
+  });
+};
+
+const applyInitials = (): void => {
+  cards.forEach((card) => {
+    if (card.dataset.initialized === "true") return;
+    card.dataset.initialized = "true";
   });
 };
 
@@ -95,4 +132,5 @@ const initNavigation = (): void => {
 };
 
 document.addEventListener("DOMContentLoaded", initNavigation);
+document.addEventListener("DOMContentLoaded", applyInitials);
 document.addEventListener("DOMContentLoaded", addCodeButtons);

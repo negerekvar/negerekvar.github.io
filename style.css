@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --label-font: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 body, html {
@@ -16,9 +17,7 @@ body, html {
     -ms-user-select: none;
     user-select: none;
     -moz-osx-font-smoothing: grayscale;
-    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.9), rgba(224, 238, 255, 0.7)),
-                radial-gradient(circle at 78% 12%, rgba(255, 223, 186, 0.5), rgba(255, 255, 255, 0)),
-                linear-gradient(135deg, #f7fbff 0%, #e4ecf8 50%, #f7fbff 100%);
+    background-image: linear-gradient(135deg, #fdfdfd 0%, #f5f7fa 100%);
     color: #0f172a;
     font-family: 'Dosis', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -128,6 +127,20 @@ body.no-scroll {
     border-color: rgba(0, 0, 0, 0.2);
     filter: invert(0);
     transform: translateY(-1px);
+}
+
+/* Color palette for initials */
+:root {
+    --charcoal-blue: #264653ff;
+    --pine-blue: #287271ff;
+    --verdigris: #2a9d8fff;
+    --tuscan-sun: #e9c46aff;
+    --sunlit-clay: #efb366ff;
+    --sandy-brown: #f2ab64ff;
+    --sandy-brown-2: #f4a261ff;
+    --burnt-peach: #e76f51ff;
+    --burnt-peach-2: #e87659ff;
+    --burnt-peach-3: #e97c61ff;
 }
 
 @media (hover: none) {
