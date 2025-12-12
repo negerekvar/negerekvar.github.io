@@ -86,7 +86,18 @@
         <iframe title="Demo" allowfullscreen></iframe>
     </div>
 
-    <script src="/build/index.js?v=20251214" defer></script>
+    <div class="code-modal hidden" id="code-modal" role="dialog" aria-modal="true" aria-label="Kod görüntüleyici">
+        <div class="code-modal__backdrop" data-close-code></div>
+        <div class="code-modal__body">
+            <button class="code-modal__close" aria-label="Kapat" data-close-code>×</button>
+            <h2 class="code-modal__title">Kod</h2>
+            <p class="code-modal__desc" id="code-modal-desc"></p>
+            <pre class="code-modal__pre"><code id="code-modal-code">Yükleniyor...</code></pre>
+            <a class="code-modal__link" id="code-modal-link" href="#" target="_blank" rel="noopener">Kaynağı GitHub’da aç</a>
+        </div>
+    </div>
+
+    <script src="/build/index.js?v=20251215" defer></script>
 </body>
 
 </html>
