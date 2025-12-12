@@ -16,8 +16,10 @@ body, html {
     -ms-user-select: none;
     user-select: none;
     -moz-osx-font-smoothing: grayscale;
-    background: radial-gradient(circle at 20% 20%, #f7f8fa, #e7ecf1);
-    color: #111;
+    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.9), rgba(224, 238, 255, 0.7)),
+                radial-gradient(circle at 78% 12%, rgba(255, 223, 186, 0.5), rgba(255, 255, 255, 0)),
+                linear-gradient(135deg, #f7fbff 0%, #e4ecf8 50%, #f7fbff 100%);
+    color: #0f172a;
     font-family: 'Dosis', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -73,7 +75,7 @@ body.no-scroll {
     border-radius: 12px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
     transition: transform 180ms ease, box-shadow 180ms ease;
     min-height: 200px;
     display: flex;
@@ -83,7 +85,7 @@ body.no-scroll {
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 48px rgba(15, 23, 42, 0.18);
 }
 
 .card img {
@@ -100,27 +102,38 @@ body.no-scroll {
     width: 34px;
     height: 34px;
     border-radius: 11px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background: rgba(0, 0, 0, 0.22);
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 700;
-    font-size: 13px;
-    display: grid;
-    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    background-color: rgba(0, 0, 0, 0.65);
+    background-image: url("/images/code.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    filter: invert(1);
     cursor: pointer;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
     opacity: 0;
-    transition: transform 180ms ease, background 180ms ease, color 180ms ease, opacity 180ms ease;
+    transition: transform 180ms ease, background 180ms ease, opacity 180ms ease, filter 180ms ease, border-color 180ms ease;
 }
 
 .card:hover .card__code-btn {
     opacity: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: rgba(0, 0, 0, 0.2);
+    filter: invert(0);
+    transform: translateY(-1px);
 }
 
 .card__code-btn:hover {
-    background: rgba(0, 0, 0, 0.36);
-    color: #f8fafc;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: rgba(0, 0, 0, 0.2);
+    filter: invert(0);
     transform: translateY(-1px);
+}
+
+@media (hover: none) {
+    .card__code-btn {
+        opacity: 1;
+    }
 }
 
 #myContainer {
@@ -166,9 +179,14 @@ canvas {
     top: 12px;
     right: 12px;
     border: none;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 28px;
+    background-color: rgba(255, 255, 255, 0.95);
+    background-image: url("/images/return.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 52%;
+    filter: none;
+    color: transparent;
+    font-size: 0;
     width: clamp(48px, 11vw, 56px);
     height: clamp(48px, 11vw, 56px);
     border-radius: 50%;
@@ -177,13 +195,13 @@ canvas {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    transition: background 150ms ease, transform 150ms ease;
+    padding: 0;
+    transition: transform 150ms ease;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
     z-index: 2;
 }
 
 .viewer__close:hover {
-    background: rgba(255, 255, 255, 0.2);
     transform: translateY(-1px);
 }
 
@@ -244,7 +262,7 @@ canvas {
     top: 12px;
     right: 12px;
     border: none;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     color: #e5e7eb;
     font-size: 24px;
     width: 36px;
@@ -253,11 +271,10 @@ canvas {
     cursor: pointer;
     display: grid;
     place-items: center;
-    transition: background 140ms ease, transform 140ms ease;
+    transition: transform 140ms ease;
 }
 
 .code-modal__close:hover {
-    background: rgba(255, 255, 255, 0.2);
     transform: translateY(-1px);
 }
 

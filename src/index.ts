@@ -2,7 +2,7 @@ const cards = Array.from(document.querySelectorAll<HTMLElement>(".card"));
 const viewer = document.getElementById("viewer") as HTMLElement | null;
 const frame = viewer?.querySelector("iframe") as HTMLIFrameElement | null;
 const closeBtn = viewer?.querySelector(".viewer__close") as HTMLButtonElement | null;
-const VERSION_TAG = "v=20251215";
+const VERSION_TAG = "v=20251217";
 
 const codeModal = document.getElementById("code-modal") as HTMLElement | null;
 const codeModalDesc = document.getElementById("code-modal-desc") as HTMLElement | null;
@@ -20,8 +20,8 @@ const addCodeButtons = (): void => {
     const btn = document.createElement("button");
     btn.className = "card__code-btn";
     btn.type = "button";
-    btn.textContent = "</>";
     btn.title = "Kodu göster";
+    btn.setAttribute("aria-label", "Kodu göster");
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
       const id = card.id;
